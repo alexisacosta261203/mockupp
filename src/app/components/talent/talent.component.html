@@ -1,0 +1,33 @@
+<section id="talento" class="talent">
+  <div class="watermark"><img src="assets/images/logo-icon-b.png" alt="" /></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Talento Emergente</h2>
+      <div class="divider"></div>
+      <p class="subtitle">
+        Creemos en el poder de las nuevas voces. Por eso creamos espacios y oportunidades
+        para que nuevos creadores desarrollen su potencial.
+      </p>
+    </div>
+    <div class="talent-grid">
+      <div class="pillars reveal-left">
+        <div class="pillar" *ngFor="let p of pillars">
+          <div class="pillar-icon">{{ p.icon }}</div>
+          <div>
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.desc }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="talent-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1681137063068-081072cf04b4?w=800&q=80" alt="Emerging Talent" />
+        <div class="image-accent"></div>
+      </div>
+    </div>
+    <div class="talent-cta reveal">
+      <h3>¿Tienes un proyecto en mente?</h3>
+      <p>Si eres un creador emergente con una historia que contar, nos encantaría conocer tu propuesta y explorar cómo podemos colaborar.</p>
+      <button (click)="scrollToContact()">Envía tu Propuesta</button>
+    </div>
+  </div>
+</section>

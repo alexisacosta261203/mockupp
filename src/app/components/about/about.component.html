@@ -1,0 +1,27 @@
+<section id="nosotros" class="about">
+  <div class="watermark"><img src="assets/images/logo-icon-n.png" alt="" /></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Sobre Nosotros</h2>
+      <div class="divider"></div>
+      <p class="subtitle">
+        Somos una productora audiovisual dedicada a crear contenido cinematográfico de alta calidad,
+        impulsando proyectos culturales y apoyando el talento emergente en la industria.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?w=800&q=80" alt="Film Production" />
+      </div>
+      <div class="about-features reveal-right">
+        <div class="feature" *ngFor="let f of features">
+          <div class="feature-icon">{{ f.icon }}</div>
+          <div>
+            <h3>{{ f.title }}</h3>
+            <p>{{ f.desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

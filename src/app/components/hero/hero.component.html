@@ -1,0 +1,34 @@
+<section id="inicio" class="hero">
+  <!-- BG Image -->
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1632187981988-40f3cbaeef5e?w=1920&q=80" alt="" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Spinning watermark -->
+  <div class="hero-watermark">
+    <img src="assets/images/logo-icon-b.png" alt="" class="spin-slow" />
+  </div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <div class="hero-animate fade-up">
+      <img src="assets/images/logo-letras-b.png" alt="NORIA Films" class="hero-logo" />
+    </div>
+    <p class="hero-sub hero-animate fade-up">Productora Audiovisual</p>
+    <p class="hero-desc hero-animate fade-up">
+      Transformamos ideas en experiencias cinematográficas inolvidables
+    </p>
+    <button class="hero-cta hero-animate fade-up" (click)="scrollTo('contacto')">
+      Trabajemos Juntos
+    </button>
+  </div>
+
+  <!-- Scroll indicator -->
+  <button class="scroll-indicator hero-animate fade-up" (click)="scrollTo('nosotros')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</section>

@@ -1,0 +1,29 @@
+<section id="portafolio" class="portfolio">
+  <div class="container">
+    <div class="section-header reveal">
+      <img src="assets/images/logo-letras-b.png" alt="NORIA Films" class="header-logo" />
+      <h2>Portafolio</h2>
+      <div class="divider"></div>
+      <p class="subtitle">Una selección de nuestros proyectos más destacados que reflejan nuestra visión creativa.</p>
+    </div>
+    <div class="filters reveal">
+      <button *ngFor="let f of filters" [class.active]="activeFilter() === f.value" (click)="setFilter(f.value)">
+        {{ f.label }}
+      </button>
+    </div>
+    <div class="portfolio-grid">
+      <div class="project-card reveal" *ngFor="let p of filtered">
+        <div class="card-image">
+          <img [src]="p.image" [alt]="p.title" />
+          <div class="card-overlay">
+            <div class="play-btn">▶</div>
+          </div>
+          <div class="card-info">
+            <span class="category">{{ p.category }}</span>
+            <h3>{{ p.title }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

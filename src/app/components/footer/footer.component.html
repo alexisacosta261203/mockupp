@@ -1,0 +1,33 @@
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-full-b.png" alt="NORIA Films" />
+        <p>Productora audiovisual dedicada a crear experiencias cinematográficas que inspiran y transforman.</p>
+        <div class="socials">
+          <a *ngFor="let s of socials" [href]="s.href" [attr.aria-label]="s.label">{{ s.icon }}</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><button (click)="scrollTo('nosotros')">Nosotros</button></li>
+          <li><button (click)="scrollTo('servicios')">Servicios</button></li>
+          <li><button (click)="scrollTo('portafolio')">Portafolio</button></li>
+          <li><button (click)="scrollTo('talento')">Talento</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contacto@noriafilms.com">contacto&#64;noriafilms.com</a></li>
+          <li><a href="tel:+524490000000">+52 (449) 000-0000</a></li>
+          <li>Aguascalientes, México</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ year }} NORIA Creative Film Studio. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

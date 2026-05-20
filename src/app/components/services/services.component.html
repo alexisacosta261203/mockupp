@@ -1,0 +1,23 @@
+<section id="servicios" class="services">
+  <div class="watermark"><img src="assets/images/logo-icon-b.png" alt="" /></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Nuestros Servicios</h2>
+      <div class="divider"></div>
+      <p class="subtitle">Ofrecemos soluciones integrales de producción audiovisual adaptadas a las necesidades de cada proyecto.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" *ngFor="let s of services">
+        <div class="card-image">
+          <img [src]="s.image" [alt]="s.title" />
+          <div class="image-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">{{ s.icon }}</div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

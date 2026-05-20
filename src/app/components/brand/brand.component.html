@@ -1,0 +1,43 @@
+<section class="brand">
+  <div class="bg-decor">
+    <img src="assets/images/logo-icon-b.png" alt="" class="decor-tl" />
+    <img src="assets/images/logo-icon-b.png" alt="" class="decor-br" />
+    <img src="assets/images/logo-icon-b.png" alt="" class="decor-center" />
+  </div>
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Nuestra Esencia</h2>
+      <div class="divider"></div>
+      <p class="subtitle">
+        Como una noria que gira, cada proyecto es un ciclo creativo que eleva historias
+        y conecta con las emociones del público.
+      </p>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-card reveal">
+        <div class="card-img" (mouseenter)="isHoveredIsotipo=true" (mouseleave)="isHoveredIsotipo=false">
+          <img src="assets/images/logo-icon-b.png" alt="Isotipo" [class.spinning]="isHoveredIsotipo" />
+        </div>
+        <h3>El Isotipo</h3>
+        <p>La noria representa el ciclo infinito de la creatividad</p>
+      </div>
+      <div class="brand-card reveal">
+        <div class="card-img">
+          <img src="assets/images/logo-letras-b.png" alt="Logotipo" />
+        </div>
+        <h3>El Logotipo</h3>
+        <p>Elegancia tipográfica que refleja profesionalismo</p>
+      </div>
+      <div class="brand-card reveal">
+        <div class="card-img">
+          <img src="assets/images/logo-full-b.png" alt="Marca completa" />
+        </div>
+        <h3>La Marca Completa</h3>
+        <p>La unión perfecta de símbolo e identidad</p>
+      </div>
+    </div>
+    <div class="brand-tagline reveal">
+      <span>"Giramos historias, elevamos emociones"</span>
+    </div>
+  </div>
+</section>

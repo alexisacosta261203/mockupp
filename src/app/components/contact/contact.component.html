@@ -1,0 +1,69 @@
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <img src="assets/images/logo-full-b.png" alt="NORIA Films" class="contact-logo" />
+      <h2>Contacto</h2>
+      <div class="divider"></div>
+      <p class="subtitle">Conversemos sobre tu proyecto. Estamos listos para convertir tu visión en realidad.</p>
+    </div>
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info reveal-left">
+        <h3>Información de Contacto</h3>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon">✉</div>
+            <div>
+              <p class="info-label">Email</p>
+              <a href="mailto:contacto@noriafilms.com">contacto&#64;noriafilms.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <p class="info-label">Teléfono</p>
+              <a href="tel:+525512345678">+52 (55) 1234-5678</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <p class="info-label">Ubicación</p>
+              <p>Aguascalientes, México</p>
+            </div>
+          </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1518930259200-3e5b29f42096?w=600&q=80" alt="Cinema" class="contact-img" />
+      </div>
+      <!-- Form -->
+      <div class="contact-form reveal-right">
+        <div class="success-msg" *ngIf="submitted">
+          ✅ Mensaje enviado con éxito. Te contactaremos pronto.
+        </div>
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" [(ngModel)]="form.name" name="name" required placeholder="Tu nombre completo" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" [(ngModel)]="form.email" name="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input id="phone" type="tel" [(ngModel)]="form.phone" name="phone" placeholder="+52 (449) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input id="subject" type="text" [(ngModel)]="form.subject" name="subject" required placeholder="¿En qué podemos ayudarte?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" [(ngModel)]="form.message" name="message" required rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          </div>
+          <button type="submit">Enviar Mensaje ✉</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

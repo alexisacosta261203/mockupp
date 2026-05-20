@@ -1,0 +1,26 @@
+<header [class.scrolled]="isScrolled()">
+  <div class="header-inner">
+    <div class="logo" (click)="scrollTo('inicio')">
+      <img src="assets/images/logo-icon-b.png" alt="NORIA Films" />
+    </div>
+    <nav class="nav-desktop">
+      <button (click)="scrollTo('inicio')">Inicio</button>
+      <button (click)="scrollTo('nosotros')">Nosotros</button>
+      <button (click)="scrollTo('servicios')">Servicios</button>
+      <button (click)="scrollTo('portafolio')">Portafolio</button>
+      <button (click)="scrollTo('talento')">Talento</button>
+      <button (click)="scrollTo('contacto')">Contacto</button>
+    </nav>
+    <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" [class.open]="menuOpen()">
+    <button (click)="scrollTo('inicio')">Inicio</button>
+    <button (click)="scrollTo('nosotros')">Nosotros</button>
+    <button (click)="scrollTo('servicios')">Servicios</button>
+    <button (click)="scrollTo('portafolio')">Portafolio</button>
+    <button (click)="scrollTo('talento')">Talento</button>
+    <button (click)="scrollTo('contacto')">Contacto</button>
+  </nav>
+</header>
